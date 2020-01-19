@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  Parent Group Custom View -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="@dimen/cardview_default_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/tv_parentItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/iv_groupIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/group_indicator"
+            android:layout_marginRight="16dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
