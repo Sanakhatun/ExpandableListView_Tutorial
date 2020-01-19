@@ -59,6 +59,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        elvSimple.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int groupPosition) {
+                /* Auto Scrolling */
+                elvSimple.setSelectedGroup(groupPosition);
+            }
+        });
     }
 
     private void loadData()
@@ -84,7 +91,9 @@ public class MainActivity extends AppCompatActivity {
             parentItemObj = new ParentItem();
             parentItemObj.setName(parentItemName);
             subjects.put(parentItemName,parentItemObj);
+
             parentItemsList.add(parentItemObj);
+
         }
 
         //get the children for the group
